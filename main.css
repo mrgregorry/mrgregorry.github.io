@@ -1,0 +1,242 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+* {
+	font-family: 'Rubik', sans-serif;
+}
+body {
+    /*background: linear-gradient(to bottom,#DADADA,#B4B4B4,#9D9D9D,#898989);*/
+    background-color: #b6b6b6;    
+}
+a, a:hover {text-decoration: none; color: #000;}
+h1,h2 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+/*--- GRADIENT BORDER ---*/
+.box {
+  position:relative;
+  vertical-align: middle;
+  color: #FFFFFF;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  border: 2px solid #D3D3D3;
+  -webkit-transition:0.5s;
+}
+
+.box:hover {
+  border: 2px solid rgba(0,160,80,0);
+  color: #FFF;
+}
+
+.box::before, .box::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.bar::before {
+  border-bottom: 3px solid #FFF;
+  border-left: 3px solid #FFF;
+  -webkit-transform-origin: 100% 0%;
+}
+
+.bar::after {
+  border-top: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+  -webkit-transform-origin: 0% 100%;
+}
+
+.box:hover::after, .box:hover::before {
+  -webkit-transform: scale(1);
+}
+/*--- GRADIENT BORDER END ---*/
+
+.container-fluider {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.bg-roz {
+	background-color: #cbe2ef;
+}
+.bg-yell {
+	background-color: #85c1e5;
+}
+.bg-yelli {
+	background-color: #5584b1;
+}
+.bg-image {
+    background-image: url(svg/backfone.svg);
+    background-size: 100% 100%;
+    padding:0;
+    margin:0;
+    height: 1000px;
+}
+.bg-inner {
+    transition:0.2s;
+}
+
+.bg-after {
+    background-color: rgba(128, 128, 128, 0.95);
+    transform: translateY(-10px); 
+    transition:0.2s;
+}
+
+.card {
+    transition: 0.6s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+/*--- magical-list ---*/
+.magical-list .list .num {
+  padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: 0.5s;
+}
+
+.magical-list .list .num:nth-child(1):before {
+  content: '1';
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
+  width: 2rem;
+  opacity: 0.05;
+  transition: 0.5s;
+}
+.magical-list .list .num:nth-child(2):before {
+  content: '2';
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
+  width: 2rem;
+  opacity: 0.05;
+  transition: 0.25s;
+}
+.magical-list .list .num:nth-child(3):before {
+  content: '3';
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
+  width: 2rem;
+  opacity: 0.05;
+  transition: 0.25s;
+}
+.magical-list .list .num:nth-child(4):before {
+  content: '4';
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
+  width: 2rem;
+  opacity: 0.05;
+  transition: 0.25s;
+}
+.magical-list .list .num:nth-child(5):before {
+  content: '5';
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
+  width: 2rem;
+  opacity: 0.05;
+  transition: 0.25s;
+}
+.magical-list .list .num a {
+  position: relative;
+  left: -1.5rem;
+  color: #3d3d3d;
+  font-size: 1.1rem;
+  transition: 0.5s;
+  transition-delay: 0.1s;
+}
+.magical-list .list .num:hover {
+  background-color: rgba(136, 194, 230, 0.9);
+  cursor: pointer;
+}
+.magical-list .list .num:hover:before {
+  opacity: 0.2;
+}
+.magical-list .list .num:hover a {
+  left: 2.5rem;
+}
+/* magical-list end */
+
+/*--- NEON TEXT ---*/
+.neon1 {
+  color: #fff;
+  transition:0.1s;
+  text-shadow: 0 0 2px #D5D166, 0 0 5px #D5D166;
+}
+/*--- NEON TEXT END ---*/
+
+
+
+
+/*---
+Решено что будем делать с min-width, для того, что-бы следовать 
+верстке для всех устройств, так-же не забыть, что верстать надо в порядке 
+возростания
+ ---*/
+@media screen and (min-width: 320px ) {
+    .container-fluider { width: 100%;max-width: 90%; }
+}
+
+@media screen and (min-width: 480px ) {
+    
+}
+
+@media screen and (min-width: 768px ) {
+    
+}
+
+@media screen and (min-width: 1024px ) {
+    
+}
+
+@media screen and (min-width: 1280px ) {
+    .container-fluider { width: 100%;max-width: 60%; }
+}
+
+@media screen and (min-width: 1366px ) {
+    
+}
+
+@media screen and (min-width: 1680px ) {
+    
+}
+
+@media screen and (min-width: 1920px ) {
+    
+}
