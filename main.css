@@ -13,7 +13,7 @@ body {
 
 body {
     /*background: linear-gradient(to bottom,#DADADA,#B4B4B4,#9D9D9D,#898989);*/
-    background-color: #b6b6b6;    
+    background-color: #f9f9f9;    
 }
 a, a:hover {text-decoration: none; color: #000;}
 h1,h2 {
@@ -80,7 +80,7 @@ h1{
     width: 100%;
     max-width: 60%;
     margin: 0 auto;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
 }
 .row {
     margin-left: 0px;
@@ -95,16 +95,20 @@ h1{
 .bg-yelli {
 	background-color: #5584b1;
 }
+.bg-inner {
+    transition:0.2s;
+}
+.menu-top{
+    background-color: #fff;
+}
 .bg-image {
     background-image: url(svg/backfone.svg);
     background-size: 100% 100%;
     padding:0;
     margin:0;
-    height: 1000px;
+    height: 800px;
 }
-.bg-inner {
-    transition:0.2s;
-}
+
 
 .bg-after {
     background-color: rgba(128, 128, 128, 0.95);
@@ -205,7 +209,16 @@ h1{
 }
 /*--- NEON TEXT END ---*/
 
+.svg-shadow{
+  box-shadow: 0px 10px 5px rgba(0,0,0,0.1);
+}
 
+
+
+
+/*--- PARALAX ---*/
+
+/*--- PARALAX ---*/
 
 
 /*---
@@ -214,12 +227,12 @@ h1{
 возростания
  ---*/
 @media screen and (min-width: 320px ) {
-    .hide{ display: none; }
-    .container-fluider { width: 100%;max-width: 95%; }
+    .hide{ display: block; }
+    .container-fluider { width: 100%;max-width: 100%; }
 }
 
 @media screen and (min-width: 480px ) {
-    
+    .container-fluider { width: 100%;max-width: 95%; }
 }
 
 @media screen and (min-width: 768px ) {
@@ -227,7 +240,7 @@ h1{
 }
 
 @media screen and (min-width: 1024px ) {
-    .hide{ display: block; }
+    .hide{ display: none; }
 }
 
 @media screen and (min-width: 1280px ) {
