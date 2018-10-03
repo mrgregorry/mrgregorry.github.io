@@ -227,6 +227,7 @@ h1{
 возростания
  ---*/
 @media screen and (min-width: 320px ) {
+    *{ font-size: 1.5rem; }
     .hide{ display: block; }
     .container-fluider { width: 100%;max-width: 100%; }
 }
@@ -240,6 +241,7 @@ h1{
 }
 
 @media screen and (min-width: 1024px ) {
+    *{ font-size: 1rem; }
     .hide{ display: none; }
 }
 
