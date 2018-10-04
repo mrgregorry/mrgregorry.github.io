@@ -239,7 +239,7 @@ h1{
 верстке для всех устройств, так-же не забыть, что верстать надо в порядке 
 возростания
  ---*/
-@media screen and (min-width: 320px ) {
+@media screen and (min-width: 319px ) {
     *{ font-size: 1.3rem; }
     .hide{ display: block; }
     .unhide{ display: none; }
