@@ -86,14 +86,16 @@ h1{
     margin-left: 0px;
     margin-right: 0px;
 }
+
+/*--- background ---*/
 .bg-roz {
-	background-color: #cbe2ef;
+  background-color: #cbe2ef;
 }
 .bg-yell {
-	background-color: #85c1e5;
+  background-color: #85c1e5;
 }
 .bg-yelli {
-	background-color: #5584b1;
+  background-color: #5584b1;
 }
 .bg-inner {
     transition:0.2s;
@@ -103,18 +105,17 @@ h1{
 }
 .bg-image {
     background-image: url(svg/backfone.svg);
-    background-size: 100% 100%;
+    
     padding:0;
     margin:0;
-    height: 800px;
+
 }
-
-
 .bg-after {
     background-color: rgba(128, 128, 128, 0.95);
     transform: translateY(-10px); 
     transition:0.2s;
 }
+/*--- background end ---*/
 
 .card {
     transition: 0.6s;
@@ -213,8 +214,20 @@ h1{
   box-shadow: 0px 10px 5px rgba(0,0,0,0.1);
 }
 
-
-
+/*--- scetch ---*/
+.scetch-1{
+  height:300px; 
+  width:400px;
+}
+.scetch-2{
+  height:300px; 
+  width:400px;
+}
+.scetch-3{
+  height:300px; 
+  width:400px;
+}
+/*--- scetch end ---*/
 
 /*--- PARALAX ---*/
 
@@ -227,7 +240,7 @@ h1{
 возростания
  ---*/
 @media screen and (min-width: 320px ) {
-    *{ font-size: 1.5rem; }
+    *{ font-size: 1.3rem; }
     .hide{ display: block; }
     .container-fluider { width: 100%;max-width: 100%; }
 }
