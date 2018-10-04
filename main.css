@@ -222,7 +222,6 @@ h1{
 
 .zoom:hover ~ .zoomy{
     transform: translate(20px,-10px);
-    /*transform: scale(1.1);  (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 /*--- zoom END ---*/
 
@@ -241,22 +240,23 @@ h1{
 }
 
 @media screen and (min-width: 480px ) {
+    .scetch{  height:300px; width:400px;}
     .container-fluider { width: 100%;max-width: 95%; }
 }
 
 @media screen and (min-width: 768px ) {
     .scetch{  height:300px; width:400px;}
-    .unhide{ display: block; }
 }
 
 @media screen and (min-width: 1024px ) {
     *{ font-size: 1rem; }
     .hide{ display: none; }
-    .scetch{  height:300px; width:500px;}
+    .unhide{ display: block; }
 }
 }
 
 @media screen and (min-width: 1280px ) {
+    .scetch{  height:300px; width:500px;}
     
 }
 
@@ -265,7 +265,7 @@ h1{
 }
 
 @media screen and (min-width: 1680px ) {
-    
+    .scetch{  height:300px; width:500px;}
 }
 
 @media screen and (min-width: 1920px ) {
