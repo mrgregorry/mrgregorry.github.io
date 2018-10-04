@@ -103,13 +103,6 @@ h1{
 .menu-top{
     background-color: #fff;
 }
-.bg-image {
-    background-image: url(svg/backfone.svg);
-    
-    padding:0;
-    margin:0;
-
-}
 .bg-after {
     background-color: rgba(128, 128, 128, 1);
     transform: translateY(-10px); 
@@ -217,21 +210,19 @@ h1{
 /*--- scetch ---*/
 .scetch-1{
   height:300px; 
-  width:400px;
+  width:350px;
 }
-.scetch-2{
-  height:300px; 
-  width:400px;
-}
-.scetch-3{
-  height:300px; 
-  width:400px;
-}
-/*--- scetch end ---*/
+/*--- scetch END ---*/
 
-/*--- PARALAX ---*/
+/*--- zoom ---*/
+.zoom {
+    transition: transform .3s; /* Animation */
+}
 
-/*--- PARALAX ---*/
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+/*--- zoom END ---*/
 
 
 /*---
@@ -239,7 +230,7 @@ h1{
 верстке для всех устройств, так-же не забыть, что верстать надо в порядке 
 возростания
  ---*/
-@media screen and (min-width: 319px ) {
+@media screen and (min-width: 320px ) {
     *{ font-size: 1.3rem; }
     .hide{ display: block; }
     .unhide{ display: none; }
