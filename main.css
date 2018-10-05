@@ -104,16 +104,16 @@ h1{
     background-color: #fff;
 }
 .bg-after {
-    background-color: rgba(128, 128, 128, 1);
+    background-color: rgba(173, 78, 78,1);
     transform: translateY(-10px); 
     transition:0.2s;
 }
 /*--- background end ---*/
 
-.card {
+.portf {
     transition: 0.6s;
 }
-.card:hover {
+.portf:hover {
     transform: translateY(-10px);
 }
 
@@ -271,3 +271,4 @@ h1{
 @media screen and (min-width: 1920px ) {
     
 }
+
