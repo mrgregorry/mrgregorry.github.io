@@ -24,6 +24,25 @@ h1{
   font-size: 2rem;
 }
 
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('gif/copper-loader.gif') repeat 50% 50%;
+   
+}
 
 /*--- BORDER ---*/
 .box {
@@ -102,12 +121,11 @@ h1{
 }
 .menu-top{
     background-color: #fff;
-    transition: 2s;
+    transition: 0.5s;
 }
 .bg-after {
     background-color: rgba(56, 105, 101,0.9);
-    transform: translateY(-10px); 
-    transition: 2s;
+    transition: 1s;
 }
 /*--- background end ---*/
 
@@ -262,7 +280,7 @@ h1{
     .hide{ display: none; }
     .unhide{ display: block; }
 }
-}
+
 
 @media screen and (min-width: 1280px ) {
     
